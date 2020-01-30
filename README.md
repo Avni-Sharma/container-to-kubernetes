@@ -1,4 +1,4 @@
-# simple-go-server
+# Container to Kubernetes
 
 The example considered here helps us to understand how we can migrate from using containers to the kubernetes ways of managing containers.
 
@@ -6,7 +6,7 @@ Some concepts to read about before we dive into implementing the examples.
 
 [Podman](https://podman.io/) - Podman is a daemonless container engine for developing, managing, and running OCI Containers on your Linux System.
 
-[Kubernetes](https://kubernetes.io/ - Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications.
+[Kubernetes](https://kubernetes.io/) - Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications.
 
 
 ## Implementing examples
@@ -53,9 +53,9 @@ WOOT!! Your container is now ready to be shipped.
 
 We surely have containers now, but what if my container dies? We can't keep monitoring it. What if we need more replicas? Who would watch of the `current state` of the containers and get it to the `desired states`? Who would `Orchestrate` them in harmony. Now let us do it the Kubernetes way. 
 
-Prerequisites- `[Install minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)` or `[crc](https://cloud.redhat.com/openshift/install/crc/installer-provisioned)` a single node cluster for local development purposes.
+Prerequisites- [Install minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) or [crc](https://cloud.redhat.com/openshift/install/crc/installer-provisioned) a single node cluster for local development purposes.
 
-`[Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)` Kubernetes command-line tool 
+[Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) Kubernetes command-line tool 
 
 `minikube start` to start the kubernetes single node cluster.
 
