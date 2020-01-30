@@ -7,3 +7,5 @@ spec:
   containers:
   - name: demo-server
     image: quay.io/avni16/demo:v1
+    ports:
+      - containerPort: 8080

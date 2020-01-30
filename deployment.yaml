@@ -1,42 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: webapp
-  name: webapp
+  name: demo-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webapp
+      run: demo-server
   template:
     metadata:
       labels:
-        app: webapp
+        run: demo-server
     spec:
       containers:
-      - image: github.com/savitaashture/knative-demo
+      - name: demo-server
+        image: quay.io/avni16/demo:v1
         ports:
-        - containerPort: 8080
-        name: webapp
-        env:
-          - name: TARGET
-            value: "Kubernetes World"
+          - containerPort: 8080
 
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  labels:
-    app: webapp
-  name: webapp
-spec:
-  ports:
-    - port: 8080
-      protocol: TCP
-      targetPort: 8080
-      nodePort: 30001
-  selector:
-    app: webapp
-  type: NodePort
