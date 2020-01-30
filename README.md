@@ -36,7 +36,7 @@ run `docker build -t quay.io/<username>/server-demo:v1 -f ./Dockerfile.expose`
 
 Note- In this Dockerfile.expose I have added the `EXPOSE` and `ENTRYPOINT` . When I give the entrypoint I do not need to exec into the container and start the server. The container now has an entrypoint to run with.
 
-Now run `podman run <image-name> -p 8081:8080`
+Now run `podman run -p 8081:8080 <image-name> `
 
 You can curl from your host machine for `curl http://localhost:8080` and `curl http://localhost:8080/kubernetes` or access the same end point from the browser.
 
