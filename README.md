@@ -1,6 +1,6 @@
 # Container to Kubernetes
 
-The example considered here helps us to understand how we can migrate from using containers to the kubernetes ways of managing containers.
+The example considered here helps us to understand how we can move from just using containers to the kubernetes ways of managing containers.
 
 Some concepts to read about before we dive into implementing the examples.
 
