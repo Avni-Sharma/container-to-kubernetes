@@ -51,13 +51,13 @@ WOOT!! Your container is now ready to be shipped.
 
 ### Case 3 (Ahoy Kubernetes!!)
 
-We surely have containers now, but what if my container dies? We can't keep monitoring it. What if we need more replicas? Who would watch of the `current state` of the containers and get it to the `desired states`? Who would `Orchestrate` them in harmony. Now let us do it the Kubernetes way. 
+We surely have containers now, but what if my container dies? We can't keep monitoring it. What if we need more replicas? Who would watch the `current state` of the containers and get it to the `desired states`? Who would `Orchestrate` them in harmony. Now let us do it the Kubernetes way. 
 
 Prerequisites- [Install minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) or [crc](https://cloud.redhat.com/openshift/install/crc/installer-provisioned) a single node cluster for local development purposes.
 
 [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) Kubernetes command-line tool 
 
-`minikube start` to start the kubernetes single node cluster.
+For my example I have considered minikube. Run `minikube start` to start the kubernetes single node cluster.
 
 Apply the pod.yaml `kubectl apply -f pod.yaml`
 
