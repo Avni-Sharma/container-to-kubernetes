@@ -74,8 +74,10 @@ Now `curl http://<minikubue ip>:<NodePort>`
 Now if you try to delete the deployment, the deployment controller would watch for terminating pods and get up the desired number of pods again depending upon the `replicas` field in the `deployment.yaml`. Isnt't it EEZY PEEZZY. Now you can relax on your ship where you are the pseudo captain ;) and BON VOYAGE :)
 
 
+#### You can join Kubernetes workspace on [slack](https://slack.k8s.io/)
 
+## References
 
-
- 
-
+- [Borg paper](https://research.google/pubs/pub43438/)
+- [Kubernetes on GitHub](https://github.com/kubernetes/kubernetes)
+- [Kubernetes architecture](https://kubernetes.io/docs/concepts/architecture/cloud-controller/)
