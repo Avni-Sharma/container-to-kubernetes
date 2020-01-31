@@ -32,7 +32,7 @@ For our example we can do `curl http://localhost:8080` and `curl http://localhos
 
 For `curl`ing from the host machine you will have to expose the container port and publish the container port to the host port on the host machine. `EXPOSE` allow communication between the container and other containers in the same network. But it does not allow communication with the host machine, or containers in another network! In order to permit that, you need to publish the port, with `-p` option.
 
-run `docker build -t quay.io/<username>/server-demo:v1 -f ./Dockerfile.expose`
+run `podman build -t quay.io/<username>/server-demo:v1 -f ./Dockerfile.expose`
 
 Note- In this Dockerfile.expose I have added the `EXPOSE` and `ENTRYPOINT` . When I give the entrypoint I do not need to exec into the container and start the server. The container now has an entrypoint to run with.
 
